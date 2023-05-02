@@ -32,7 +32,8 @@
 
 ## Setup
 
-Create a new Node.js-based Repl in [replit.com](https://replit.com/) and name it **JS Arrays**
+
+Lets continue working in our script.js file via node.js in our terminal
 
 ## 1. The Use Case (What & Why) of Arrays
 
@@ -261,27 +262,6 @@ movies.forEach(function(movie, idx) {
 
 It's a **best practice** to name the first parameter that accepts each element as the singular version of the name of the array, or simply the first letter of the array variable (`movie` or `m` for the example above).
 
-### Using a `for...of` Loop
-
-ES2015 provides the `for...of` loop for iterating over the elements of arrays and other iterables such as strings:
-
-```js
-for (let movie of movies) {
-  if (movie === 'The Matrix') break;
-  console.log(movie);
-}
-```
-
-...will result in the following output because once `movie` is assigned 'The Matrix', the `if` statement will result in exiting the `for` loop thanks to the `break` statement:
-
-```
-Best In Show
-Alien
-```
-
-Whereas the `forEach` method always iterates over every element, the `for...of` loop can be exited using the [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) statement.
-
-Note that there is also a `for...in` loop with similar syntax.  We will learn more about this type of loop later, but for now be careful not to accidentally use `for...in` when you intend to use `for...of`.
 
 ## 7. 💪 Practice Exercise - Arrays (10 mins)
 
@@ -299,26 +279,6 @@ Let's practice creating, modifying and iterating over an array!
 
 I'll code a solution when we return.
 
-## 8. Making Copies of an Array
-
-There are multiple ways to copy an array.
-
-The approach you use depends upon whether you need to copy just some or the entire array.
-
-Let's take a look...
-
-### Copy All of an Array
-
-ES2015 gave us a cool new way to copy an entire array using `...` ([Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)).
-
-Example:
-
-```js
-movies //-> ['Best In Show', 'Alien', 'The Matrix', 'Gladiator']
-const moviesCopy = [...movies];
-moviesCopy //-> ['Best In Show', 'Alien', 'The Matrix', 'Gladiator']
-```
-All of the elements in the `movies` arrays have been "spread" within the new array.
 
 ### Some of an Array
 
